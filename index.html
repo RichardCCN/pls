@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="dog.css">
+
+</head>
+<body>
+
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            
+            <div class="slide one">    <script>
+                var audio = new Audio("sound/music.mp3") ;
+                
+                audio.oncanplaythrough = function(){
+                audio.play();
+                }
+                
+                audio.loop = true;
+                
+                audio.onended = function(){
+                audio.play();
+                }
+                </script>                
+                <input type="image" src="First.gif" onclick="audio.play()" class="no">
+            </div>
+            <div class="slide two"><img src="Woman.png" class="woman"> <img src="second.png" class="no"></div>
+            <div class="slide three"><img src="third.gif" class="no"></div>
+            <div class="slide four"><img src="four.gif" class="no"></div>
+        </div>
+    </div>
+</body>
+</html>
